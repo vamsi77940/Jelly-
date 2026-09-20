@@ -13,7 +13,7 @@
 - ⚡ **Local-First Architecture**: Powered by IndexedDB via Dexie for fast, offline-capable storage without arbitrary ceiling limits.
 - 🤖 **Jarvis AI Assistant**: Conversational AI assistant supporting tool execution (creating tasks, reminders, calendar events, habits, and analyzing progress).
 - 🔒 **Secure Firebase Backend**: Serverless cloud function (`functions/`) option to keep your Gemini API keys safe off the client browser using Firebase App Check token verification.
-- 🎯 **Habit Tracker & Goals**: Weekly habit check-ins, streak tracking, multi-milestone goal progress bars, and automatic week/month rescheduling.
+- 🎯 ***Habit Tracker & Goals***: Weekly habit check-ins, streak tracking, multi-milestone goal progress bars, and automatic week/month rescheduling.
 - 📅 **Integrated Calendar & Timelines**: Full month grid view and hourly timeline view merging task deadlines, academic study slots, and calendar events.
 - ⏱️ **Focus Mode (Pomodoro)**: Customizable focus & break timers with session metrics and completion tracking.
 - 🏆 **Gamified Progress & XP System**: Earn XP and level up as you complete tasks, habits, focus sessions, and goal milestones.
