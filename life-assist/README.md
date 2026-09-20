@@ -1,4 +1,4 @@
-# LifeAssist
+# 🪼 Jelly — AI-Powered Personal OS
 
 A Jarvis-style personal operating system — tasks, notes, reminders, and an AI
 assistant, built local-first with an offline-capable PWA shell.
@@ -154,5 +154,10 @@ Dark, instrument-panel aesthetic (deep navy base, electric-cyan accent,
 amber for priority/warnings) with a recurring "assistant orb" motif — the
 same ringed mark as the app icon — used as the assistant's visual presence
 throughout. Type: Space Grotesk for headings, Inter for body text,
-JetBrains Mono for clocks/timers/data. All fonts are bundled via
-`@fontsource` rather than a CDN, so they work offline.
+JetBrains Mono for clocks/timers/data. ---
+
+## 👤 Author
+
+**Koduru Paka Sai Mani Deep**  
+GitHub: [@kodurupakasaimanideep](https://github.com/kodurupakasaimanideep)  
+Repo: [github.com/kodurupakasaimanideep/Jelly-](https://github.com/kodurupakasaimanideep/Jelly-)

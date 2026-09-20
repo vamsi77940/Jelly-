@@ -41,7 +41,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/life-assist.git
+git clone https://github.com/kodurupakasaimanideep/Jelly-.git
 cd life-assist
 
 # Install dependencies
@@ -131,12 +131,19 @@ git add .
 git commit -m "feat: complete lifeassist OS with backend, storage sync, and fixes"
 
 # Add remote repository
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+git remote add origin https://github.com/kodurupakasaimanideep/Jelly-.git
 
 # Push to main branch
 git branch -M main
 git push -u origin main
 ```
+
+---
+
+## 👤 Author
+
+**Koduru Paka Sai Mani Deep**  
+GitHub: [@kodurupakasaimanideep](https://github.com/kodurupakasaimanideep)
 
 ---
 
