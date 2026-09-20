@@ -1,43 +1,90 @@
-# Dependencies
+# ============================================================
+# JELLY — .gitignore
+# Rule: only source code goes to GitHub.
+# Reference videos, images, docs stay LOCAL only.
+# ============================================================
+
+# ── Dependencies ─────────────────────────────────────────────
 node_modules/
 life-assist/node_modules/
 life-assist/functions/node_modules/
 
-# Build & cache output
+# ── Build & cache output ─────────────────────────────────────
 dist/
 life-assist/dist/
 life-assist/functions/lib/
 *.tsbuildinfo
 
-# Local env & secret files
+# ── Environment / secrets ────────────────────────────────────
 .env
 .env.local
 life-assist/.env
 life-assist/.env.local
 
-# Temp archives & media
-*.zip
-*.mp4
-*.MP4
-scratch_frames/
-
-# IDE / System
+# ── IDE / OS clutter ─────────────────────────────────────────
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Private / sensitive files — NOT for GitHub
-*.pdf
+# ── Root-level files (app lives inside life-assist/) ─────────
+/package.json
+/package-lock.json
+
+# ── PRIVATE MEDIA — block ALL videos, images, docs ───────────
+# Videos
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.mkv
+*.webm
+
+# Images (ALL extensions)
 *.png
 *.jpg
 *.jpeg
+*.gif
 *.webp
+*.svg
+*.bmp
+*.tiff
+*.ico
+
+# Documents & archives
+*.pdf
+*.zip
+*.rar
+*.7z
+*.doc
+*.docx
+*.xlsx
+*.xls
+*.ppt
+*.pptx
+
+# Audio
+*.mp3
+*.wav
+*.aac
+*.m4a
+
+# ── EXCEPTION: allow only the app's own public assets ────────
+# These PNGs are required for the PWA — whitelist them explicitly
+!life-assist/public/jelly-logo.png
+!life-assist/public/icons/
+!life-assist/public/icons/*.png
+
+# ── Private reference folders ────────────────────────────────
 private_data/
-life-assist/extract_frames.py
+reference_docs/
+college_data/
+scraped_data/
+scratch_frames/
+life-assist/scratch_frames/
+
+# ── Internal planning docs ────────────────────────────────────
 life-assist/PHASE_ROADMAP.md
 life-assist/QUALITY.md
-
-# Root-level package files (app lives in life-assist/)
-package.json
-package-lock.json
+life-assist/extract_frames.py
