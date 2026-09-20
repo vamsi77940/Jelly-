@@ -26,3 +26,18 @@ scratch_frames/
 Thumbs.db
 .vscode/
 .idea/
+
+# Private / sensitive files — NOT for GitHub
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+private_data/
+life-assist/extract_frames.py
+life-assist/PHASE_ROADMAP.md
+life-assist/QUALITY.md
+
+# Root-level package files (app lives in life-assist/)
+package.json
+package-lock.json
