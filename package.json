@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "npm run dev --prefix life-assist",
+    "build": "npm run build --prefix life-assist",
+    "test": "npm run test --prefix life-assist",
+    "typecheck": "npm run typecheck --prefix life-assist"
+  },
+  "dependencies": {
+    "firebase": "^12.16.0"
+  }
+}

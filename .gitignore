@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+life-assist/node_modules/
+life-assist/functions/node_modules/
+
+# Build & cache output
+dist/
+life-assist/dist/
+life-assist/functions/lib/
+*.tsbuildinfo
+
+# Local env & secret files
+.env
+.env.local
+life-assist/.env
+life-assist/.env.local
+
+# Temp archives & media
+*.zip
+*.mp4
+*.MP4
+scratch_frames/
+
+# IDE / System
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

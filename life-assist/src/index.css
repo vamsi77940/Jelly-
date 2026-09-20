@@ -1,0 +1,101 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --color-base-bg: #FFFFFF;
+    --color-base-panel: #F5F5F7;
+    --color-base-raised: #E8E8ED;
+    --color-base-border: #D1D1D6;
+    
+    --color-ink-primary: #1D1D1F;
+    --color-ink-muted: #86868B;
+    --color-ink-faint: #AEAEB2;
+    
+    --color-accent-cyan: #007AFF;
+    --color-accent-cyan-soft: #007AFF22;
+    --color-accent-amber: #FF9500;
+    --color-accent-amber-soft: #FF950022;
+    --color-accent-rose: #FF3B30;
+    --color-accent-mint: #34C759;
+    --color-accent-indigo: #5856D6;
+  }
+
+  html.dark {
+    color-scheme: dark;
+    --color-base-bg: #000000;
+    --color-base-panel: #0A0A0A;
+    --color-base-raised: #141414;
+    --color-base-border: #262626;
+    
+    --color-ink-primary: #E8EDF2;
+    --color-ink-muted: #8B96A5;
+    --color-ink-faint: #5A6472;
+    
+    --color-accent-cyan: #4FD1E8;
+    --color-accent-cyan-soft: #4FD1E822;
+    --color-accent-amber: #F2A65A;
+    --color-accent-amber-soft: #F2A65A22;
+    --color-accent-rose: #EC7A8C;
+    --color-accent-mint: #6FE3A6;
+    --color-accent-indigo: #5E5CE6;
+  }
+
+  html {
+    /* Set default background */
+    background-color: var(--color-base-bg);
+    color: var(--color-ink-primary);
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  html.dark body {
+    background: radial-gradient(120% 140% at 15% -10%, #0c0c0c 0%, #000000 55%);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: theme('fontFamily.display');
+    letter-spacing: -0.02em; /* Tighter tracking for Apple/Linear feel */
+  }
+
+  /* Visible keyboard focus everywhere — never suppressed */
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.cyan');
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.base.border');
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.ink.faint');
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
