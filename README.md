@@ -8,7 +8,7 @@
 
 ---
 
-## 🌟 Highlights & Features
+## 🌟 Highlights and Features
 
 - ⚡ **Local-First Architecture**: Powered by IndexedDB via Dexie for fast, offline-capable storage without arbitrary ceiling limits.
 - 🤖 **Jarvis AI Assistant**: Conversational AI assistant supporting tool execution (creating tasks, reminders, calendar events, habits, and analyzing progress).
